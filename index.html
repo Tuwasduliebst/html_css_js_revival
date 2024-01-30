@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcom to KoKoaTalk </title>
+    <title>Welcom to KoKoaTalk Clone</title>
+    <!-- About BEM CSS https://nykim.work/15 -->
+    <!-- About Icons https://heroicons.com/ .... https://fontawesome.com/-->
 </head>
 <body>
-    <div id="status-bar">
+    <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
-            <!-- To Do: Wifi Icon -->
+           <i class="fa-solid fa-wifi"></i>
         </div>
         <div class="status-bar__column">
             <span>18:43</span>
         </div>
         <div class="status-bar__column">
             <span>100%</span>
-            <!-- Battery Icon -->
-            <!-- Lighting Icon -->
+           <i class="fa-solid fa-battery-full"></i>
+           <i class="fa-solid fa-bolt"></i>
         </div>
     </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcom to KoKoaTalk clone</h1>
+        <p class="welcome-header__text">If you have a KoKoa Account, log in with your email or phone number.</p>
+    </header>
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number" required />
+        <input type="text" placeholder="Password" required />
+        <input type="submit" value="Log In" />
+        <input type="submit" value="Sign Up" />
+        <a href="#">Find Kakao Account or Password</a>
+    </form>
+    <script src="https://kit.fontawesome.com/7fd936c669.js" crossorigin="anonymous"></script>
 </body>
 </html>
