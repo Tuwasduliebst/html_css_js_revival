@@ -1,9 +1,9 @@
 .screen-header {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
   padding: var(--horizontal-space);
-  /* margin-bottom: 15px; */
+  margin-bottom: 15px;
   /* background-color: antiquewhite; */
 }
 
