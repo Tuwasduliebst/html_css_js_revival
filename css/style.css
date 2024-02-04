@@ -20,4 +20,5 @@ body {
 
 .main-screen {
   padding: opx var(--horizontal-space);
+  /* background-color: aqua; */
 }
