@@ -9,10 +9,11 @@
 @import "components/screen-header.css";
 @import "components/user-components.css";
 @import "components/badge.css";
-
+@import "components/point.css";
 /* Screen */
 @import "screen/login.css";
 @import "screen/friends.css";
+@import "screen/find.css";
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -20,6 +21,5 @@ body {
 }
 
 .main-screen {
-  padding: opx var(--horizontal-space);
-  /* background-color: aqua; */
+  padding: 0px var(--horizontal-space);
 }
