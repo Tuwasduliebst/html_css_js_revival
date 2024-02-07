@@ -92,18 +92,25 @@
   width: 100%;
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 5px 25px;
   box-sizing: border-box;
   align-items: center;
 }
 
 .reply .reply__column:first-child {
-  width: 10%;
+  width: 2%;
 }
+.reply__column:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .reply .reply__column:last-child {
-  width: 90%;
+  width: 98%;
   position: relative;
+  margin-left: 25px;
 }
 
 .reply i {
