@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+@import "reset.css";
+:root {
+  /* --yellow: #fae100; */
+  --library-header__color: #fece32;
+  --horizontal-space: 0px 25px;
+  /* --main-border: 1px solid rgba(0, 0, 0, 0.2); */
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 120vh;
+}
