@@ -1,4 +1,234 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 @import "reset.css";
-@import "variables.css";
+:root {
+  /* --yellow: #fae100; */
+  --library-header__color: #fece32;
+  --horizontal-space: 0px 25px;
+  /* --main-border: 1px solid rgba(0, 0, 0, 0.2); */
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 120vh;
+}
+
+header {
+  background-color: var(--library-header__color);
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 25px;
+  width: 100%;
+  /* position: relative; */
+  box-sizing: border-box;
+  /* margin: 0 25px; */
+}
+/* css hack */
+.header-column {
+  width: 33%;
+}
+
+.header-column:nth-child(2) span {
+  font-size: 30px;
+  font-weight: 700;
+}
+.header-column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+/* css hack end */
+.header-column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+main {
+  position: relative;
+  margin: var(--horizontal-space);
+}
+.search-book {
+  position: absolute;
+  width: 100%;
+  padding: 5px 25px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 0 5px 30px -28px;
+  top: -55px;
+}
+.search-book__column {
+  width: 100%;
+}
+.search-book input {
+  padding: 20px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 30px;
+  box-sizing: border-box;
+  opacity: 0.2;
+}
+input::placeholder {
+  font-weight: 600;
+  font-size: 20px;
+}
+.search-book i {
+  position: absolute;
+  right: 30px;
+  top: 18px;
+  opacity: 0.2;
+  font-size: 27px;
+}
+
+.search-book:focus-within .fa-magnifying-glass {
+  opacity: 0;
+}
+.search-book:focus-within input::placeholder {
+  opacity: 0;
+}
+.section-first {
+  padding-top: 70px;
+}
+
+section h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+section h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+article,
+section {
+  margin-top: 25px;
+}
+.book-article {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.book-article__photo {
+  border: 1px solid black;
+  width: 300px;
+  height: 250px;
+  border-radius: 15px;
+  margin-right: 25px;
+}
+.book-article__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.book-article__content span {
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.3;
+}
+
+.star {
+  margin-top: 20px;
+  color: var(--library-header__color);
+  margin-bottom: 30px;
+}
+.star i:last-child {
+  color: rgba(108, 108, 108, 0.127);
+}
+
+.book-article__content-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  width: 100%;
+}
+.book-article__content-box .hashtag {
+  padding: 10px 15px;
+  font-weight: 600;
+  color: #242424fb;
+  background-color: #bdbdbd7f;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.circle-book {
+  margin-top: 35px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--library-header__color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-book {
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-article__wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.cover img {
+  width: 100px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.cover > .star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.cover > .star i {
+  font-size: 13px;
+}
+
+.popular-article {
+  display: flex;
+  justify-content: flex-start;
+}
+.popular-article__photo {
+  border: 1px solid black;
+  width: 300px;
+  height: 250px;
+  border-radius: 15px;
+  margin-right: 25px;
+}
+.popular-article__content {
+  width: 100%;
+}
+.popular-article__content h2 {
+  word-wrap: break-word;
+  white-space: normal;
+  max-width: 300px;
+  line-height: 35px;
+}
+
+.popular-article__content span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #b8b8b8c2;
+  word-wrap: break-word;
+  white-space: normal;
+  max-width: 300px;
+}

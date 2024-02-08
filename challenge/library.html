@@ -8,18 +8,23 @@
   </head>
   <body>
     <header>
-      <div>
-        <i class="fa-solid fa-bars"></i>
+      <div class="header-column">
+        <i class="fa-solid fa-bars fa-2x"></i>
       </div>
-      <div>library</div>
-      <div>
-        <i class="fa-solid fa-cart-plus"></i>
+      <div class="header-column"><span>library</span></div>
+      <div class="header-column">
+        <i class="fa-solid fa-cart-plus fa-2x"></i>
       </div>
     </header>
     <main>
-      <form action=""></form>
+      <form action="" class="search-book">
+        <div class="search-book__column">
+          <input type="text" placeholder="Search books..." />
+          <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+        </div>
+      </form>
 
-      <section>
+      <section class="section-first">
         <h1>Book of the day</h1>
         <article class="book-article">
           <div class="book-article__photo">
@@ -33,15 +38,17 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-            <div class="book-article__content-box hashtag">
-              <span>Journey</span>
-              <span>Biography</span>
+              <i class="fa-solid fa-star"></i>
             </div>
             <div class="book-article__content-box">
-              <div class="circle-book"></div>
-              <div class="square-book"></div>
+              <span class="hashtag">Journey</span>
+              <span class="hashtag">Biography</span>
+            </div>
+            <div class="book-article__content-box">
+              <div class="circle-book">
+                <i class="fa-solid fa-bookmark fa-lg"></i>
+              </div>
+              <div class="square-book">Book Now</div>
             </div>
           </div>
         </article>
@@ -51,53 +58,53 @@
         <article class="top-article">
           <div class="top-article__wrap">
             <div class="cover">
-              <img src="" alt="" />
+              <img src="#" alt="" />
               <div class="star">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
             </div>
             <div class="cover">
-              <img src="" alt="" />
+              <img src="#" alt="" />
               <div class="star">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
             </div>
             <div class="cover">
-              <img src="" alt="" />
+              <img src="#" alt="" />
               <div class="star">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
             </div>
             <div class="cover">
-              <img src="" alt="" />
+              <img src="#" alt="" />
               <div class="star">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
             </div>
             <div class="cover">
-              <img src="" alt="" />
+              <img src="#" alt="" />
               <div class="star">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
             </div>
           </div>
@@ -107,7 +114,7 @@
         <h1>Popular authors</h1>
         <article class="popular-article">
           <div class="popular-article__photo">
-            <img src="" alt="" />
+            <img src="#" alt="" />
           </div>
           <div class="popular-article__content">
             <h2>George Raymond Richard Martin</h2>
@@ -118,5 +125,6 @@
         </article>
       </section>
     </main>
+    <script src="https://kit.fontawesome.com/7fd936c669.js" crossorigin="anonymous"></script>
   </body>
 </html>

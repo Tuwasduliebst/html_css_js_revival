@@ -1,5 +1,6 @@
 :root {
   --yellow: #fae100;
-  --horizontal-space: 25px;
+  --library-header__color: #fece32;
+  --horizontal-space: 25px 25px;
   --main-border: 1px solid rgba(0, 0, 0, 0.2);
 }
