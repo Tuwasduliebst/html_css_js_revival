@@ -105,6 +105,7 @@ main {
   justify-content: space-between;
   gap: 15px;
   width: 100%;
+  overflow: hidden;
 }
 
 .list-box {
@@ -259,4 +260,40 @@ main {
   left: 65%;
   z-index: 4;
   font-size: 10px;
+}
+.second-controller {
+  /* background-color: #fece32; */
+  width: 100%;
+  height: 90px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-controller__icons-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-controller__icons-box > i:first-child {
+  opacity: 0.2;
+  font-size: 14px;
+}
+.second-controller__icons-box > i:nth-child(2) {
+  font-size: 20px;
+}
+.second-controller__icons-box > i:nth-child(3) {
+  font-size: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 40px rgba(40, 39, 39, 0.469);
+}
+.second-controller__icons-box > i:nth-child(4) {
+  font-size: 20px;
+}
+.second-controller__icons-box > i:last-child {
+  opacity: 0.2;
+  font-size: 14px;
 }
