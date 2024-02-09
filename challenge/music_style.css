@@ -216,9 +216,47 @@ main {
   font-size: 24px;
   font-weight: 800;
   margin-top: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .second__author {
   opacity: 0.3;
   font-weight: 800;
+}
+.current-progressbar__box {
+  /* width: 100%; */
+  height: 50px;
+  margin-top: 20px;
+  /* background-color: #fece32; */
+}
+.current-progressbar__text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  /* color: black; */
+  opacity: 0.2;
+  font-size: 12px;
+  font-weight: 800;
+}
+.current-progressbar__bar-bg {
+  width: 100%;
+  height: 2px;
+  background-color: #c1c0c060;
+  /* opacity: 0.3; */
+  margin-top: 10px;
+  position: relative;
+}
+.current-progressbar__bar {
+  width: 65%;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  z-index: 2;
+}
+.circle2 {
+  position: absolute;
+  top: -3px;
+  left: 65%;
+  z-index: 4;
+  font-size: 10px;
 }
